@@ -1,13 +1,22 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+  <ion-toolbar color="secondary">
+    <img src="" class="logo" />
+  </ion-toolbar>
+  <ion-toolbar *ngIf="!loggedIn" color="secondary">
+    <button clear [navPush]="logPage">Sign In</button>
+  </ion-toolbar>
+  <ion-toolbar *ngIf="loggedIn" color="secondary">
+    <button ion-button icon-left clear small>
+      <ion-icon name="contact"></ion-icon>
+      {{loggedIn}} Logged In
+    </button>
+    <button ion-button outline small (click)="signOff()">
+      Sign Out
+    </button>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
