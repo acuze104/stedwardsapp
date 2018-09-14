@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+//import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
+//import * as firebase from 'firebase/app';
 import { AlertController  } from 'ionic-angular';
 //import { Storage } from '@ionic/storage';
 //import { AngularFireDatabase, AngularFireList } from 'angularfire2/database'

@@ -6,7 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { AngularFireAuthModule } from 'angularfire2/auth'
-import { IonicStorageModule } from '@ionic/storage';
+//import { IonicStorageModule } from '@ionic/storage';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -17,7 +17,7 @@ export const firebaseConfig = {
   apiKey: "AIzaSyABMDqOBF2WKT3gjuftRKqO96-7hNW9hDw",
   authDomain: "stedwardscatholicschool-33988.firebaseapp.com",
   databaseURL: "https://stedwardscatholicschool-33988.firebaseio.com",
-  storageBucket: "stedwardscatholicschool-33988.appspot.com",
+  ///storageBucket: "stedwardscatholicschool-33988.appspot.com",
   messageSenderId: "913053131914"
 
 

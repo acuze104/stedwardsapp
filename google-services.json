@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "913053131914",
+    "firebase_url": "https://stedwardscatholicschool-33988.firebaseio.com",
+    "project_id": "stedwardscatholicschool-33988",
+    "storage_bucket": "stedwardscatholicschool-33988.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913053131914:android:d3c0b2bcd548b6f6",
+        "android_client_info": {
+          "package_name": "com.stewardscatholicschool.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913053131914-5g1q5ktli9ge7jsu4g7ri8ttuj4csp6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3CvzYwpIUd_urgZYGSkQowxgrxgAFYnA"
+        },
+        {
+          "current_key": "AIzaSyA3CvzYwpIUd_urgZYGSkQowxgrxgAFYnA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

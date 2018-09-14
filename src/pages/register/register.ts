@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams, AlertController  } from 'ionic-ang
 import { HomePage } from '../home/home'; 
 import { AngularFireAuth } from 'angularfire2/auth';
 import {UserServiceProvider } from '../../providers/user-service/user-service'
-import * as firebase from 'firebase/app';
+//import * as firebase from 'firebase/app';
 
 
 /**
