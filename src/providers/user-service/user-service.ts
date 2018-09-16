@@ -25,6 +25,13 @@ export class UserServiceProvider {
      // this.items = fdb.list('/users');
   }
 
+  login(userName, password) {
+    return this.ofAuth.auth.signInAndRetrieveDataWithEmailAndPassword(userName,password);
+  }
+
+  register(userName, password) {
+    return this.ofAuth.auth.createUserWithEmailAndPassword(userName,password);
+  }
   
   logOut(){
     

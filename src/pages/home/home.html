@@ -1,23 +1,129 @@
 <ion-header>
-  <ion-toolbar color="secondary">
-    <img src="" class="logo" />
-  </ion-toolbar>
-  <ion-toolbar *ngIf="!loggedIn" color="secondary">
-    <button clear [navPush]="logPage">Sign In</button>
-  </ion-toolbar>
-  <ion-toolbar *ngIf="loggedIn" color="secondary">
-    <button ion-button icon-left clear small>
-      <ion-icon name="contact"></ion-icon>
-      {{loggedIn}} Logged In
-    </button>
-    <button ion-button outline small (click)="signOff()">
-      Sign Out
-    </button>
-  </ion-toolbar>
+
+    <ion-toolbar primary style="height:150px">
+        <button ion-button menuToggle class="menubarbutton" right end> 
+          <ion-icon name="menu" class="menu"></ion-icon>
+          
+        </button>
+    
+      </ion-toolbar>
+    
+    
+      <!-- <ion-toolbar *ngIf="!loggedIn" color="secondary">
+          <button clear [navPush]="logPage">Sign In</button>
+        </ion-toolbar>
+        <ion-toolbar *ngIf="loggedIn" color="secondary">
+          <button ion-button icon-left clear small>
+            <ion-icon name="contact"></ion-icon>
+            Welcome  {{loggedIn}}!
+          </button>
+          <button ion-button outline small (click)="signOff()">
+            Sign Out
+          </button>
+        </ion-toolbar>-->
+    
+
 </ion-header>
 
-<ion-content padding>
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <ion-card>
+    
+    <ion-card-content text-center>
+      <p>ST. EDWARD SCHOOL STRIVES TOWARD EXCELLENCE IN CATHOLIC FAITH FORMATION, EDUCATION, AND DEVELOPING THE WHOLE
+        CHILD </p>
+    </ion-card-content>
+    <img src="assets/imgs/cam.jpg">
+  </ion-card>
+  
+  <ion-card> 
+    <img src="assets/imgs/glasses.jpg">
+
+    <ion-card-content>
+      <p>
+        Our programs include:
+        
+
+          <li>Affordable full day Preschool</li>
+          <li> Preschool to 8th grade quality education</li>
+          <li>Full day kindergarten program</li>
+          <li> 4th to 8th grade iPads</li>
+          <li>Arts and Music</li>
+          <li>Religious weekly liturgy</li>
+          <li>Choir</li>
+          <li>Spanish</li>
+          <li>On-site computer lab and technology classes</li>
+          <li>Sports programs</li>
+        
+      </p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          30 Likes
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          64 Comments
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          30yr ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/_bg.jpg">
+      </ion-avatar>
+      <h2>Dr. Lorem Ipsum</h2>
+      <p>June 28, 1990</p>
+    </ion-item>
+
+    <img src="assets/imgs/guitar.jpg">
+
+    <ion-card-content>
+      <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+        and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum
+        comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
+        Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          46 Likes
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          66 Comments
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          2d ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+
 </ion-content>

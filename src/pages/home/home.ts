@@ -3,17 +3,14 @@ import { NavController } from 'ionic-angular';
 
 import {AngularFireAuth} from 'angularfire2/auth';
 import {UserServiceProvider } from '../../providers/user-service/user-service'
- 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
+
 export class HomePage {
-  menuData =  [
-    { title: "About US", pushPage:"aboutus"},
-    { title: "Location", pushPage:"location"},
-    { title: "Contact", pushPage:"contactus"},
-  ];
 
   logPage : any;
   loggedIn :any;

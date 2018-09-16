@@ -7,9 +7,12 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { AngularFireAuthModule } from 'angularfire2/auth'
 //import { IonicStorageModule } from '@ionic/storage';
-
+ 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { SettingsPage } from '../pages/settings/settings';
+import { GradesPage } from '../pages/grades/grades';
 import { UserServiceProvider } from '../providers/user-service/user-service';
 
 export const firebaseConfig = {
@@ -28,7 +31,10 @@ export const firebaseConfig = {
   declarations: [
     MyApp,
     HomePage,
-  ],
+    LoginPage,
+    SettingsPage,
+    GradesPage  
+],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
@@ -39,7 +45,10 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    SettingsPage,
+    GradesPage
   ],
   providers: [
     StatusBar,
@@ -49,4 +58,6 @@ export const firebaseConfig = {
     UserServiceProvider
   ]
 })
-export class AppModule {}
+export class AppModule {
+
+}
